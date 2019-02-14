@@ -22,8 +22,7 @@ const createListElement = content => {
 };
 
 const makeListItemWithImage = nameOfImage => {
-  let imageToBeAdded = createImage(nameOfImage);
-  let theWholeThing = createListElement(imageToBeAdded);
+  let theWholeThing = createListElement(createImage(nameOfImage));
   return theWholeThing;
 };
 
