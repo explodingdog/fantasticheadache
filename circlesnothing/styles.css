@@ -1,0 +1,19 @@
+body {
+  width: 90%;
+  margin: auto;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
