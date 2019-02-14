@@ -1,15 +1,10 @@
-const circles = [
-  "circle1",
-  "circle2",
-  "circle3",
-  "circle4",
-  "circle5",
-  "circle6",
-  "circle7",
-  "circle8",
-  "circle9",
-  "circle10"
-];
+const createListOfNumberedItems = (n, name) => {
+  let createdList = [];
+  for (n; n > 0; n--) {
+    createdList.push(`${name}${n}`);
+  }
+  return createdList;
+};
 
 const createImage = name => {
   let image = document.createElement("img");
@@ -39,5 +34,6 @@ const makeItems = listOfItems => {
 
 let imageList = document.querySelector(".image-list");
 
-let theList = makeItems(circles.reverse());
+const circles = createListOfNumberedItems(24, "circle");
+let theList = makeItems(circles);
 theList.forEach(one => imageList.appendChild(one));
