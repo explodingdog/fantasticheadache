@@ -29,7 +29,6 @@ const createListElement = content => {
 const makeListItemWithImage = nameOfImage => {
   let imageToBeAdded = createImage(nameOfImage);
   let theWholeThing = createListElement(imageToBeAdded);
-
   return theWholeThing;
 };
 
@@ -40,5 +39,5 @@ const makeItems = listOfItems => {
 
 let imageList = document.querySelector(".image-list");
 
-let theList = makeItems(circles);
+let theList = makeItems(circles.reverse());
 theList.forEach(one => imageList.appendChild(one));
