@@ -33,6 +33,6 @@ const makeItems = listOfItems => {
 
 let imageList = document.querySelector(".image-list");
 
-const circles = createListOfNumberedItems(24, "circle");
+const circles = createListOfNumberedItems(30, "circle");
 let theList = makeItems(circles);
 theList.forEach(one => imageList.appendChild(one));
